@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ligin-TechBit</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="js/script.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <div class="bemvnd">
+                    <li><img src="icons/icons8-rivet-64.png" alt="#" width="27px" height="27px"></li>
+                    <li><h1>Bem Vindo a TechBit</h1></li>
+                </div>
+                <div class="local">
+                    <h1>SÃO PAULO, BRASIL</h1>
+                </div>
+                <div class="info">
+                    <li>(00)00000-0000</li>
+                    <li><a href="#"><img src="icons/icons8-instagram-50.png" alt="insta" width="25px" height="25px"></a></li>
+                    <li><a href="#"><img src="icons/icons8-facebook-novo-50.png" alt="face" width="25px" height="25px"></a></li>
+                    <li><a href="#"><img src="icons/icons8-nova-mensagem-501branco.png" alt="mail" width="25px" height="25px"></a></li>
+                </div>
+            </div>
+        </header>
+        <div class="cadastro">
+            <div class="login">
+                <div class="boxlogin">
+                    <div class="titlle">
+                        <h2>CADASTRO</h2>
+                    </div>
+                    <div class="subtittle">
+                        <h4>Preencha os campos abaixo para fazer Login</h4>
+                    </div>
+                    <form action="/cadastro-form" method="post" id="form">
+                        <div class="container-form" id="container-form">
+                            <div class="sucess-message" id="sucess-message"></div>
+                        </div>
+                        <h3>Nome de usuário:<br></h3>
+                        <div class="user">
+                            <img src="icons/icons8-usuário-30.png" alt="mail">
+                            <input type="text" placeholder="Digite seu nome" name="nome">
+                            <span class="error" id="error-nome"></span>
+                        </div>
+                        <h3>Email:<br></h3>
+                        <div class="email">
+                            <img src="icons/icons8-mensagem-30.png" alt="mail">
+                            <input type="email" placeholder="Digite seu E-mail" name="email">
+                            <span class="error" id="error-email"></span>
+                            <div id="error-message" class="error-message"></div>
+                        </div>
+                        <h3>Senha:<br></h3>
+                        <div class="senha">
+                            <img src="icons/icons8-cadeado-30.png" alt="senha">
+                            <input type="password" id="campoSenha" name="senha" placeholder="Digite sua senha">
+                            <span class="error" id="error-senha"></span>
+                        </div>
+                        <div class="lembrar">
+                            <h5><input type="checkbox" id="botaoMostrarSenha">Mostrar senha</h5>
+                            <h5><input type="checkbox">Lembrar senha</h5>
+                        </div>
+                        <div class="botoes">
+                            <div class="acessar">
+                                <button type="submit">Criar conta</button>
+                            </div>
+                            <div class="voltar">
+                                <a href="/login"><button type="button">Voltar</button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

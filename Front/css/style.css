@@ -1,0 +1,911 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+}
+
+/* começo topbar */
+
+.topbar {
+    width: 100%;
+    height: 35px;
+    background-color: #1E73BE;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.topbar .bemvnd {
+    display: flex;
+    font-size: 7px;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.topbar .local {
+    font-size: 7px;
+    margin-left: 130px;
+}
+
+.topbar .info {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    font-size: 15px;
+}
+
+.topbar .info li {
+    margin: 0 10px; /* Adiciona um espaçamento de 10px à esquerda e à direita de cada item */
+    padding-top: 5px;
+}
+
+        /* Media Queries para telas menores */
+        @media (max-width: 768px) {
+            .topbar .local,
+            .topbar .info {
+                display: none;
+            }
+
+            .topbar {
+                justify-content: center; /* Centraliza o bemvnd */
+                height: auto;
+            }
+
+            .topbar .bemvnd {
+                font-size: 14px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+                padding-top: 5px;
+                padding-left: 0;
+            }
+
+            .topbar .bemvnd img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .topbar .bemvnd h1 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topbar .bemvnd {
+                font-size: 12px;
+            }
+
+            .topbar .bemvnd h1 {
+                font-size: 14px;
+            }
+        }
+    /* Media Queries para telas menores */
+
+/* fim topbar */
+
+/* começo navbar */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #00BFFF;
+    position: relative; 
+    z-index: 10; 
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0; 
+}
+
+.navbar .logo {
+    width: 150px; 
+    height: 5px; 
+    display: flex;
+    padding-left: 160px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .esquerda {
+    width: 150px;
+    height: 80px; /* Altere para 80px para igualar a altura da navbar */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.navbar .direita {
+    flex: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha à direita */
+    margin-right: 50px; /* Espaçamento à direita */
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px #000;
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #000;
+    background-color: #EAE8E8;
+    width: 200px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.navbar .direita li a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ícone do menu para telas pequenas */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+    color: white;
+}
+
+/* Menu lateral */
+.sidenav {
+    height: 100%; /* Full-height */
+    width: 0; /* Inicialmente fechado */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 11; /* Sobrepõe o conteúdo */
+    top: 0;
+    right: 0;
+    background-color: #00BFFF; /* Cor do fundo do menu */
+    overflow-x: hidden; /* Não permitir overflow horizontal */
+    transition: 0.5s; /* Animação de abertura */
+    padding-top: 60px; /* Espaço no topo */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .navbar .direita {
+        display: none; /* Esconde a seção direita */
+    }
+
+    .menu-icon {
+        display: block; /* Mostra o ícone do menu */
+    }
+}
+
+
+/* fim navbar */
+
+/* começo carrossel */
+.carrossel {
+    width: 100%;
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+}
+.container-slider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 80px; /* Adiciona margem superior para empurrar o carrossel para baixo */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+}
+
+.container-imgs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 290px; /* Ajuste conforme necessário */
+}
+
+.slider {
+    opacity: 0;
+    position: absolute;
+    transition: 1s ease;
+    width: 100%;
+}
+
+.on {
+    opacity: 1;
+}
+
+#voltar-button {
+    left: 10px; /* Posiciona o botão de voltar à esquerda */
+}
+
+#passar-button {
+    right: 10px; /* Posiciona o botão de passar à direita */
+}
+
+#voltar-button,
+#passar-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#voltar-button img,
+#passar-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#passar-button img {
+    transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+    .container-slider {
+        margin-top: 0;
+    }
+
+    .container-imgs {
+        height: 220px; /* Ajuste conforme necessário */
+    }
+
+    #voltar-button img,
+    #passar-button img {
+    width: 80%;
+    height: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-slider {
+        margin-top: 0;
+    }
+    .container-imgs {
+        height: 150px; /* Ajuste conforme necessário */
+    }
+}
+
+/* fim carrossel */
+
+/* começo produtos home */
+
+.produtos {
+    width: 90%;
+    margin: 50px auto;
+    margin-top: 150px; /* Aumente esta linha para mover a seção de produtos ainda mais para baixo */
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .produtos {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos {
+        margin-top: 50px;
+    }
+}
+
+.produtos h1 {
+    font-size: 2em;
+    color: #000000; /* cor do texto "PRODUTOS" */
+    margin-bottom: 20px;
+}
+
+.produtos .cases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* espaçamento entre os produtos */
+}
+
+.produtos .cases .prod {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    flex: 1 1 calc(20% - 20px); /* ajusta a largura dos produtos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produtos .cases .prod img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* ajusta a altura máxima das imagens */
+    object-fit: contain; /* mantém a proporção da imagem */
+}
+
+
+.produtos .cases .prod h4 {
+    color: #FFF;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.produtos .cases .prod a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.produtos .cases .prod:hover {
+    transform: scale(1.05);
+    background-color: #00BFFF;
+
+}
+/* fim produtos home */
+
+/* começo sobre a empresa */
+.sobretech {
+    width: 95%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 30px;
+}
+
+.sobretech .textos {
+    width: auto;
+    height: auto;
+    background-color: #EAE8E8;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sobretech .textos h1,
+.sobretech .textos h2,
+.sobretech .textos h3,
+.sobretech .textos h4 {
+    margin-top: 15px;
+}
+
+.sobretech .sobreValores {
+    width: 95%;
+    height: auto;
+    display: flex;
+    background-color: #FFF;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sobretech .sobreValores .item {
+    background-color: #EAE8E8;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+}
+/* fim sobre a empresa */
+
+/* começo rodape */
+footer{
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+}
+
+.politic{
+    text-align: center;
+}
+
+.tudoRodape{
+    background-color: #797777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.tudoRodape .esquerda .contats{
+    display: flex;
+}
+.contacts a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px; /* Ajuste conforme necessário */
+    gap: 10px;
+}
+.contacts img {
+    margin-right: 10px; 
+    width: 40px; 
+    height: 40px; 
+}
+
+/* fim rodape */
+
+
+
+ /* FALE CONOSCO HTML */ 
+/* MANTER A BAIXO DO INDEX */ 
+
+
+/* começo fale conosco */
+.testetudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    gap: 15rem;
+    padding: 2rem;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.testetudo .esquedaform {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: #EAE8E8;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #1E1E1E;
+}
+
+.testetudo .contact {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #1E73BE;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 2.5rem; /* Alinha o texto verticalmente */
+}
+
+.testetudo .contato input {
+    width: 100%;
+    max-width: 300px;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    padding-left: 0.5rem;
+    margin: 0.5rem 0; /* Espaçamento entre os inputs */
+}
+
+.testetudo .contato .nome,
+.testetudo .contato .email,
+.testetudo .contato .foneform,
+.testetudo .contato .msg {
+    padding-left: 0.5rem;
+}
+
+.testetudo .contato .enviar {
+    width: 100%;
+    max-width: 200px;
+    height: 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testetudo .contato .enviar button {
+    background-color: #1E73BE;
+    width: 100%;
+    max-width: 110px;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.testetudo .contato .enviar button:hover{
+    background-color: #0056b3;
+}
+
+.testetudo .direitaform{
+    width: 480px;
+    height: 420px;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px #1E1E1E;
+}
+.testetudo .direitaform h2{
+    align-items: center;
+    text-align: center;
+    background-color: #1E73BE;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+ /* login HTML */ 
+/* MANTER A BAIXO DO CONTATO */ 
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.boxlogin {
+    width: auto;
+    max-width: 400px; /* Definir um tamanho máximo para o box */
+    height: auto;
+    background: white; /* Pode ser ajustado conforme o design desejado */
+    padding: 20px;
+    box-shadow: 0 0 4px #1E1E1E;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaçamento vertical entre os elementos */
+}
+
+.boxlogin .titlle {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #1E73BE;
+    border-radius: 10px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxlogin .subtittle {
+    text-align: center;
+    padding: 15px;
+}
+
+.boxlogin .email,
+.boxlogin .user,
+.boxlogin .senha {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    gap: 5px; /* Espaçamento entre a imagem e o input */
+    margin: 5px 0 5px 0;
+}
+
+.boxlogin .email input,
+.boxlogin .user input,
+.boxlogin .senha input {
+    width: 100%; /* Faz o input crescer para ocupar o espaço disponível */
+    height: 35px;
+}
+
+.boxlogin input {
+    margin: 0.7rem 0;
+}
+
+.boxlogin .lembrar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre a checkbox e o texto */
+}
+
+.boxlogin .lembrar h5 {
+    margin: 0; /* Remove margens padrão */
+}
+
+.boxlogin .esqueci h5:hover,
+.boxlogin .cadastro h3:hover,
+.boxlogin .lembrar h5:hover {
+    color: #1E73BE;
+}
+
+.boxlogin .botoes {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.botoes .acessar button,
+.botoes .voltar button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1E73BE;
+    color: #FFF;
+    cursor: pointer;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+}
+
+.container-form {
+    width: 400px;
+    height: 40px;
+    background: #ebebeb;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    transform-origin: top; 
+}
+
+.container-form.show {
+    opacity: 1; 
+    visibility: visible; 
+    animation: foldIn 0.4s ease forwards;
+}
+
+.container-form.hide {
+    animation: foldOut 0.4s ease forwards;
+}
+
+@keyframes foldIn {
+    from {
+        transform: translateX(-50%) scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes foldOut {
+    from {
+        transform: translateX(-50%) scaleY(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50%) scaleY(0);
+        opacity: 0;
+    }
+}
+
+#sucess-message {
+    color: #48ad4d;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.error-mensagem{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Media Queries para responsividade */
+@media (min-width: 600px) {
+    .boxlogin {
+        max-width: 500px; /* Aumentar o tamanho máximo para telas maiores */
+    }
+
+    .boxlogin .botoes {
+        flex-direction: row; /* Botões em linha para telas maiores */
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 400px) {
+    .boxlogin {
+        padding: 15px; /* Reduzir o padding para telas menores */
+    }
+
+    .boxlogin .titlle {
+        height: 30px; /* Reduzir a altura do título */
+    }
+
+    .boxlogin .subtittle {
+        padding: 10px;
+    }
+
+    .boxlogin .email input,
+    .boxlogin .user input,
+    .boxlogin .senha input {
+        height: 30px; /* Reduzir a altura dos inputs para telas menores */
+    }
+
+    .botoes .acessar button,
+    .botoes .voltar button {
+        height: 30px; /* Reduzir a altura dos botões */
+    }
+}
+
+ /*fim login HTML */ 
+
+
+/* comeco produtos HTML */
+
+.linhaprinc{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.products {
+    height: 250px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.products .produtosBo{
+    display: flex;
+    gap: 20px;
+}
+
+.products .navegaProduct{
+    width: 400px;
+    background-color: #E4E4E4;
+    padding: 15px;
+}
+
+.products .navegaProduct h3{
+    text-align: center;
+}
+
+
+.products .navegaProduct .prods{
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 50px;
+}
+
+.products .navegaProduct .prods a{
+    color: #000;
+}
+
+.products .navegaProduct .prods a:hover{
+    color: #007bff;
+    transition: 0.2s ease-in-out;
+}
+
+.product-box {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #E4E4E4;
+    text-align: center;
+    padding: 20px;
+    width: 210px;
+}
+
+.product-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-box button:hover {
+    background-color: #0056b3;
+}
+
+.rebites, .rebiManual, .rebiHidro {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem em linhas */
+    justify-content: centrer;
+    gap: 20px;
+}
+
+.product-box {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Define a largura dos produtos para 30% do contêiner */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.close-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Adicione margem superior para separar o botão dos produtos */
+    position: relative;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+
+/* fim produtos HTML */
+
+.error{
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin: 60px 0 0 10px;
+}
+
+.error-message{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin: 55px 0 0 35px;
+}

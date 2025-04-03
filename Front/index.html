@@ -1,0 +1,209 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home TechBit</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+
+    <div class="home">
+
+        <!-- começo top bar -->
+        <header>
+        <div class="topbar">
+            <div class="bemvnd">
+                <li><img src="icons/icons8-rivet-64.png" alt="#" width="27px" height="27px"></li>
+                <li><h1>Bem Vindo a TechBit</h1></li>
+            </div>
+            <div class="local">
+                <h1>SÃO PAULO, BRASIL</h1>
+            </div>
+            <div class="info">
+                <li>(00)00000-0000</li>
+                <li><a href="#"><img src="icons/icons8-instagram-50.png" alt="insta" width="25px" height="25px"></a></li>
+                <li><a href="#"><img src="icons/icons8-facebook-novo-50.png" alt="face" width="25px" height="25px"></a></li>
+                <li><a href="#"><img src="icons/icons8-nova-mensagem-501branco.png" alt="mail" width="25px" height="25px"></a></li>
+            </div>
+        </div>
+        </header>
+        <!-- fim top bar -->
+
+        <!-- começo navBar -->
+        <nav>
+        <div class="navbar">
+            <div class="esquerda">
+                <div class="logo">
+                    <a href="/">
+                        <img src="imgs/Techbit_mv.png" alt="LOGO TECHBIT" width="150px" height="150px">
+                    </a>
+                </div>
+            </div>
+            <div class="direita">
+                <li><a href="/">HOME</a></li>
+
+                <div class="dropdown">
+                    <li><a href="/produtos">PRODUTOS</a></li>
+
+                    <!-- teste menu dropdown -->
+                     
+                    <!-- <div class="dropdown-menu">
+                        <a href="#">PRODUTO 1</a>
+                        <a href="#">PRODUTO 2</a>
+                        <a href="#">PRODUTO 3</a>
+                    </div> -->
+                    
+                </div>
+                <li><a href="/contato">CONTATO</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="#">
+                    <img src="icons/icons8-pesquisar-100.png" alt="pesquisar" width="25px" height="25px">
+                </a></li>
+            </div>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/">HOME</a>
+            <a href="/produtos">PRODUTOS</a>
+            <a href="/contato">CONTATO</a>
+            <a href="/login">LOGIN</a>
+        </div>
+        </nav>
+        <!-- fim navBar -->
+
+        <!-- começo carrossel -->
+        <div class="carrossel">
+            <div class="container-slider">
+                <div class="container-imgs">
+                    <button id="voltar-button"><img src="icons/icons8-à-esquerda-dentro-de-um-círculo-90(1).png" alt="voltar-button"></button>
+                    <button id="passar-button"><img src="icons/icons8-à-esquerda-dentro-de-um-círculo-90(1).png" alt="passar-button"></button>
+                    <img src="imgs/banner1.png" alt="banner1" class="slider on">
+                    <img src="imgs/banner2.png" alt="banner2" class="slider">
+                    <img src="imgs/banner3.png" alt="banner3" class="slider">
+                    <img src="imgs/banner4.png" alt="banner4" class="slider">
+                </div>
+            </div>
+        </div>
+        <!-- fim carrossel -->  
+
+        <!-- começo produtos home -->
+        <div class="produtos">
+            <h1>Produtos</h1>
+            <div class="cases">
+                <div class="prod">
+                    <a href="#">
+                    <img src="imgs/rosca_int-removebg-preview(1).png" alt="Rebite rosca interna">
+                    <h4>Rebites com <br>rosca interna</h4>
+                    </a>
+                </div>
+                <div class="prod">
+                    <a href="#">
+                    <img src="imgs/rebiteRepuxo-removebg-preview.png" alt="Rebite de repuxo">
+                    <h4>Rebites de repuxo</h4>
+                    </a>
+                </div>
+                <div class="prod">
+                    <a href="#">
+                    <img src="imgs/especial-removebg-preview.png" alt="Rebites especiais">
+                    <h4>Rebites especiais</h4>
+                    </a>
+                </div>
+                <div class="prod">
+                    <a href="#">
+                    <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebitadeira manual">
+                    <h4>Rebitadeira manual</h4>
+                    </a>
+                </div>
+                <div class="prod">
+                    <a href="#">
+                    <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebitadeira hidropneumatica">
+                    <h4>Rebitadeira <br>hidropneumatica</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- fim produtos home -->
+
+        <!-- começo sobre a empresa -->
+        <div class="sobretech">
+            <div class="textos">
+                <h1>Sobre a TechBit</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
+                    versions of Lorem Ipsum.</h3>
+
+                <h2>Origem do nome TechBit-MV</h2>
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </h4>
+            </div>
+
+                <div class="sobreValores">
+                    <div class="missao">
+                        <img src="imgs/fogueteazul.png" alt="missão">
+                        <h3>Missão</h3>
+                        <h4>Lorem Ipsum is simply dummy <br>text of the printing and typesetting <br>industry.
+                        lorem Ipsum has been the </h4>
+                    </div>
+                    <div class="visao">
+                        <img src="imgs/olhoazul.png" alt="visao">
+                        <h3>Visão</h3>
+                        <h4>Lorem Ipsum is simply dummy <br>text of the printing and typesetting <br>industry.
+                        lorem Ipsum has been the </h4>
+                    </div>
+                    <div class="valores">
+                        <img src="imgs/estrelaazul.png" alt="valores">
+                        <h3>Valores</h3>
+                        <h4>Lorem Ipsum is simply dummy <br>text of the printing and typesetting <br>industry.
+                        lorem Ipsum has been the </h4>
+                    </div>
+                </div>
+        </div>
+
+        <footer>
+            <div class="tudoRodape">
+                <div class="esquerda">
+                    <h2>Nossos <br>contatos</h2>
+                    <div class="contacts">
+                        <a href="#">
+                            <img src="icons/icons8-whatsapp-60.png" alt="whatsFot">
+                            <h5>(00)00000-0000</h5>
+                        </a>
+                        <a href="#">
+                            <img src="icons/icons8-telefone-60.png" alt="foneFot">
+                            <h5>(00)00000-0000</h5>
+                        </a>
+                        <a href="#">
+                            <img src="icons/icons8-nova-mensagem-501branco.png" alt="mailFot">
+                            <h5>email@email.com</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="direita">
+                    <h2>NEWSLETTER</h2>
+                    <div class="innfos">
+                        <h4>Nome:</h4>
+                        <input type="text" name="" id="" placeholder="Escreva seu nome">
+                        <h4>Email:</h4>
+                        <input type="email" name="" id="" placeholder="Escreva E-mail">
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="politic">
+                <h4>Desenvolvido por Grupo TechBit-MV - POLITICA DE PRIVACIDADE</h4>
+            </div>
+        </footer>
+    </div>
+
+    </body>
+    </html>

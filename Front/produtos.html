@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+<header>
+    <div class="topbar">
+        <div class="bemvnd">
+            <li><img src="icons/icons8-rivet-64.png" alt="#" width="27px" height="27px"></li>
+            <li><h1>Bem Vindo a TechBit</h1></li>
+        </div>
+        <div class="local">
+            <h1>SÃO PAULO, BRASIL</h1>
+        </div>
+        <div class="info">
+            <li>(00)00000-0000</li>
+            <li><a href="#"><img src="icons/icons8-instagram-50.png" alt="insta" width="25px" height="25px"></a></li>
+            <li><a href="#"><img src="icons/icons8-facebook-novo-50.png" alt="face" width="25px" height="25px"></a></li>
+            <li><a href="#"><img src="icons/icons8-nova-mensagem-501branco.png" alt="mail" width="25px" height="25px"></a></li>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="navbar">
+        <div class="esquerda">
+            <div class="logo">
+                <a href="/">
+                    <img src="imgs/Techbit_mv.png" alt="LOGO TECHBIT" width="150px" height="150px">
+                </a>
+            </div>
+        </div>
+        <div class="direita">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/produtos">PRODUTOS</a></li>
+            <li><a href="/contato">CONTATO</a></li>
+            <li><a href="/login">LOGIN</a></li>
+            <li><a href="#">
+                <img src="icons/icons8-pesquisar-100.png" alt="pesquisar" width="25px" height="25px">
+            </a></li>
+        </div>
+        <span class="menu-icon" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">HOME</a>
+        <a href="/produtos">PRODUTOS</a>
+        <a href="/contato">CONTATO</a>
+        <a href="/login">LOGIN</a>
+    </div>
+</nav>
+
+<div class="linhaprinc">
+    <h1>Nossos Produtos</h1>
+    <div class="carrinho">
+        <a href="#">
+            <img src="icons/icons8-carrinho-30.png" alt="carrinho">
+            <span>0</span>
+        </a>
+    </div>
+</div>
+
+<div class="products">
+    <div class="navegaProduct">
+        <h3>Conheça nossos produtos</h3>
+        <div class="prods">
+            <a href="#" id="show-rebites">Rebites</a> <br>
+            <a href="#" id="show-rebiManual">Rebitadeira Manual</a><br>
+            <a href="#" id="show-rebiHidro">Rebitadeira Hidropneumática</a><br>
+        </div>
+    </div>
+    <div class="produtosBo">
+        <div class="product-box">
+            <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+            <h3>Rebites e Rebites especiais</h3>
+            <button>Ver mais</button>
+        </div>
+        <div class="product-box">
+            <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebitadeira Manual">
+            <h3>Rebitadeira <br>Manual</h3>
+            <button>Ver mais</button>
+        </div>
+        <div class="product-box">
+            <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebitadeira Hidropneumática">
+            <h3>Rebitadeira Hidropneumática</h3>
+            <button>Ver mais</button>
+        </div>
+    </div>
+
+    <div class="rebites" id="rebites" style="display: none;">
+        <div class="product-container">
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/rebiteRepuxo2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+        <button class="close-button" id="close-rebites">Fechar</button>
+    </div>
+    
+    <div class="rebiManual" id="rebiManual" style="display: none;">
+        <div class="product-container">
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/manualvermelha2-removebg-preview.png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+        <button class="close-button" id="close-rebiManual">Fechar</button>
+    </div>
+    
+    <div class="rebiHidro" id="rebiHidro" style="display: none;">
+        <div class="product-container">
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+            <div class="product-box">
+                <img src="imgs/hidropneu2-removebg-preview(1).png" alt="Rebites">
+                <h3>Rebites e Rebites especiais</h3>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+        <button class="close-button" id="close-rebiHidro">Fechar</button>
+    </div>
+</div>
+
+</body>
+</html>
