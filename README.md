@@ -3,7 +3,7 @@
 ## Sobre o projeto 🔍
 
 <p align="center">
-  O projeto **Sistema de Login** é uma aplicação web que permite a criação e autenticação de usuários. Com ele, os visitantes do site podem se cadastrar e fazer login, garantindo uma melhor organização e controle de acessos. 
+  O projeto *Sistema de Login* é uma aplicação web que permite a criação e autenticação de usuários. Com ele, os visitantes do site podem se cadastrar e fazer login, garantindo uma melhor organização e controle de acessos. 
 </p>
 
 ## Funcionalidades ✨
