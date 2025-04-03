@@ -1,4 +1,4 @@
-<div align="center">
+# <div align="center">
 # <h1 align="center">  Sistema de Login 🧑‍💻 </h1>
 
 ## Sobre o projeto 🔍
@@ -18,7 +18,7 @@
 <strong>Express.js</strong>: Framework para criação de rotas e API.
 <strong>JavaScript</strong>: Linguagem principal utilizada no projeto.
 <strong>HTML</strong>: Estruturação da interface do usuário.
-<strong>CSS</strong>: Estilização e responsividade da aplicação.
+<strong>CSS</strong>: Estilização da aplicação.
 
 ## Como clonar o repositório 📋
 
