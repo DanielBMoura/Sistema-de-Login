@@ -8,20 +8,16 @@
 
 ## Funcionalidades ✨
 
-- 📊 **Área Administrativa**: Possui um painel para gerenciar a lista de presentes com operações de **CRUD** (Criar, Ler, Atualizar, Deletar).
-- 🔒 **Autenticação de Usuário**: Permite o cadastro e login seguro.
-- ⚙️ **Definição de Valores**: Administradores podem personalizar valores e descrições dos presentes.
-- 📧 **Envio de E-mails**: Notificações automáticas para os usuários.
-- 💳 **API de Pagamento**: Suporte para pagamentos online diretamente na plataforma.
+- 🔒 <strong>Autenticação de Usuário</strong>: Permite o cadastro e login seguro.
 
 ## Tecnologias Utilizadas 💻
 
-- **Node.js**: Ambiente de execução JavaScript no servidor.
-- **MongoDB**: Banco de dados NoSQL para armazenar informações.
-- **Express.js**: Framework para criação de rotas e API.
-- **JavaScript**: Linguagem principal utilizada no projeto.
-- **HTML**: Estruturação da interface do usuário.
-- **CSS**: Estilização e responsividade da aplicação.
+- <strong>Node.js</strong>: Ambiente de execução JavaScript no servidor.
+- <strong>MySQL</strong>: Banco de dados relacional para armazenar informações.
+- <strong>Express.js</strong>: Framework para criação de rotas e API.
+- <strong>JavaScript</strong>: Linguagem principal utilizada no projeto.
+- <strong>HTML</strong>: Estruturação da interface do usuário.
+- <strong>CSS</strong>: Estilização e responsividade da aplicação.
 
 ## Como clonar o repositório 📋
 
