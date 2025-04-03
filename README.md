@@ -1,8 +1,10 @@
-# Lista de Presentes 🎉
+# <h1 align="center">  Sistema de Login 🧑‍💻 </h1>
 
 ## Sobre o projeto 🔍
 
-O projeto **Lista de Presentes** é uma aplicação web que permite a criação e gerenciamento de listas de presentes. Com ele, os administradores podem cadastrar seus desejos em um único local, facilitando o acesso para aqueles que desejam presentear.
+<p align="center">
+  O projeto **Sistema de Login** é uma aplicação web que permite a criação e autenticação de usuários. Com ele, os visitantes do site podem se cadastrar e fazer login, garantindo uma melhor organização e controle de acessos. 
+</p>
 
 ## Funcionalidades ✨
 
