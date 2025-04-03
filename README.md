@@ -13,8 +13,8 @@
 
 ## Tecnologias Utilizadas 💻
 
-<strong>Node.js</strong>: Ambiente de execução JavaScript no servidor.
-<strong>MySQL</strong>: Banco de dados relacional para armazenar informações.
+- <strong>Node.js</strong>: Ambiente de execução JavaScript no servidor.
+- <strong>MySQL</strong>: Banco de dados relacional para armazenar informações.
 <strong>Express.js</strong>: Framework para criação de rotas e API.
 <strong>JavaScript</strong>: Linguagem principal utilizada no projeto.
 <strong>HTML</strong>: Estruturação da interface do usuário.
