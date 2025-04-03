@@ -27,16 +27,16 @@ Para clonar o repositório, execute o seguinte comando:
 git clone https://github.com/DanielBMoura/Sistema-de-Login.git
 ```
 
-## Instalando as dependências 📦
-
-```bash
-npm install
-```
-
 ## Inicializando o servidor 🚀
 
+No MySQL, crie o banco de dados: "dbtcc":
 ```bash
-npm run start
+create database dbtcc;
+```
+
+No terminal do Visual Studio Code:
+```
+node index.js
 ```
 
 ## Considerações finais 📝
