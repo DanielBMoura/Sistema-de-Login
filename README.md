@@ -1,4 +1,4 @@
-# <div align="center">
+<div align="center">
 # <h1 align="center">  Sistema de Login 🧑‍💻 </h1>
 
 ## Sobre o projeto 🔍
@@ -13,12 +13,12 @@
 
 ## Tecnologias Utilizadas 💻
 
-<strong>Node.js</strong>: Ambiente de execução JavaScript no servidor. <br>
-<strong>MySQL</strong>: Banco de dados relacional para armazenar informações.
-<strong>Express.js</strong>: Framework para criação de rotas e API.
-<strong>JavaScript</strong>: Linguagem principal utilizada no projeto.
-<strong>HTML</strong>: Estruturação da interface do usuário.
-<strong>CSS</strong>: Estilização da aplicação.
+**Node.js**: Ambiente de execução JavaScript no servidor.  
+**MySQL**: Banco de dados relacional para armazenar informações.  
+**Express.js**: Framework para criação de rotas e API.  
+**JavaScript**: Linguagem principal utilizada no projeto.  
+**HTML**: Estruturação da interface do usuário.  
+**CSS**: Estilização da aplicação.  
 
 ## Como clonar o repositório 📋
 
