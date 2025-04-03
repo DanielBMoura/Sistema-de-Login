@@ -9,7 +9,7 @@
 
 ## Funcionalidades ✨
 
-- 🔒 <strong>Autenticação de Usuário</strong>: Permite o cadastro e login seguro.
+🔒 <strong>Autenticação de Usuário</strong>: Permite o cadastro e login seguro.
 
 ## Tecnologias Utilizadas 💻
 
