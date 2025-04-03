@@ -1,5 +1,5 @@
 <div align="center">
-# Sistema de Login 🧑‍💻
+<h1 align="center">Sistema de Login 🧑‍💻</h1>
 
 ## Sobre o projeto 🔍
 
