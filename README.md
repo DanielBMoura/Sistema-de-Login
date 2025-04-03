@@ -41,9 +41,7 @@ node index.js
 
 ## Considerações finais 📝
 
-🔗 **Para conhecer mais do meu trabalho:** [clique aqui](#)
-
-🌍 **Link do projeto:** [clique aqui](#)
+🔗 **Para conhecer mais do meu trabalho:** [clique aqui](https://www.linkedin.com/in/daniel-borazo-de-moura-b4a995356/)
 
 📜 **Licença:** MIT
 
