@@ -23,7 +23,11 @@
 
 **HTML**: Estruturação da interface do usuário.  
 
-**CSS**: Estilização da aplicação.  
+**CSS**: Estilização da aplicação.
+
+**Render**: Plataforma utilizada para fazer o deploy e deixar a aplicação online.
+
+**Railway**: Plataforma de deploy e gerenciamento de serviços backend, usada para hospedar e conectar o banco de dados MySQL ao projeto de forma prática e integrada.
 
 ## Como clonar o repositório 📋
 
@@ -38,6 +42,14 @@ git clone https://github.com/DanielBMoura/Sistema-de-Login.git
 No MySQL, crie o banco de dados: "dbtcc":
 ```bash
 create database dbtcc;
+```
+
+No arquivo db.js:
+```bash
+const sequelize = new Sequelize('bdtcc', 'root', 'SuaSenha', {
+    host: "localhost",
+    dialect: 'mysql'
+})
 ```
 
 No terminal do Visual Studio Code:
