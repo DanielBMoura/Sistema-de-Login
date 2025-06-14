@@ -1,22 +1,28 @@
-// Conexão com o Banco de Dados (Railway):
 const Sequelize = require('sequelize');
+require('dotenv').config(); // Carrega variáveis do .env
 
-// Configuração usando a URL do Railway (substitua pela sua)
-const sequelize = new Sequelize('mysql://root:NWUjRUwhtyisdJZZyETbYMRcfIIYdoBP@turntable.proxy.rlwy.net:40295/railway', {
-  dialect: 'mysql',
-  dialectOptions: {
-    ssl: {
-      require: true, // Para conexões seguras (obrigatório no Railway)
-      rejectUnauthorized: false // Ignora verificação de certificado (apenas para desenvolvimento)
+const sequelize = new Sequelize(
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    dialect: process.env.DB_DIALECT,
+    dialectOptions: {
+      ssl: {
+        require: process.env.DB_SSL === 'true', // Converte string para boolean
+        rejectUnauthorized: false // Apenas para desenvolvimento
+      }
+    },
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
     }
-  },
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
   }
-});
+);
 
 // Teste de conexão
 sequelize.authenticate()
@@ -28,6 +34,6 @@ sequelize.authenticate()
   });
 
 module.exports = {
-  Sequelize: Sequelize,
-  sequelize: sequelize
+  Sequelize,
+  sequelize
 };
