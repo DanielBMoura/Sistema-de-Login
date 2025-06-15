@@ -48,10 +48,12 @@ create database dbtcc;
 No arquivo db.js:
 ```bash
 const sequelize = new Sequelize('bdtcc', 'root', 'SuaSenha', {
-    host: "localhost",
-    dialect: 'mysql'
+host: "localhost",
+dialect: 'mysql'
 })
 ```
+
+OBS: Comente a seguinte linha de código em db.js: require('dotenv').config();
 
 No terminal do Visual Studio Code:
 ```
